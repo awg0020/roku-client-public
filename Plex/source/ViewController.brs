@@ -108,6 +108,7 @@ Function vcCreateHomeScreen()
     m.InitializeOtherScreen(screen, invalid)
     screen.Screen.SetBreadcrumbEnabled(true)
     screen.Screen.SetBreadcrumbText("", CurrentTimeAsString())
+	screen.Loader.RefreshData()
     screen.Show()
 
     return screen
